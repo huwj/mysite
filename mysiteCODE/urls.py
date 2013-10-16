@@ -11,9 +11,9 @@ urlpatterns = patterns('',
     # url(r'^$', 'mysiteCODE.views.home', name='home'),
     url(r'^$', controllers.index),
     # url(r'^mysiteCODE/', include('mysiteCODE.foo.urls')),
-    url(r'^hello/$', hello), #timer.views.hello    
-    url(r'^time/$', current_datetime),
-    url(r'^time/plus/(\d+)/$', hours_ahead),
+    url(r'^hello/$', hello, name="hello"), #timer.views.hello    
+    url(r'^time/$', current_datetime,name="timer"),
+    url(r'^time/plus/(\d+)/$', hours_ahead, name="ahead"),
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
