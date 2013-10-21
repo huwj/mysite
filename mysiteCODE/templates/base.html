@@ -7,6 +7,8 @@
 <ul class="main nav">
 	<a href="{% url 'hello' %}">Hello</a>
 	<a href="{% url 'timer' %}">Time</a>
+        <a href="{%url 'django.contrib.auth.views.login'%}">Login</a>
+        <a href="{%url 'django.contrib.auth.views.logout'%}">Logout</a>
 </ul>
 <div class="content">
 	{% block content%}{% endblock %}
